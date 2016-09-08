@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gechao.weather.MainActivity" >
+
+    <Button
+        android:id="@+id/btn_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_cancel_selector"
+        android:onClick="chooseProvince"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="选择省份"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_cancel_selector"
+        android:onClick="chooseCity"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="选择城市"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_wea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>
